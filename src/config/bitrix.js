@@ -16,6 +16,10 @@ export default class Bitrix24Client {
           order: { ID: 'ASC' },
           start: start,
           limit: limit,
+          filter: {
+                    'ACTIVE': 'Y', // Фильтр по активным товарам
+                    'CATALOG_ACTIVE': 'Y' // Дополнительная проверка активности в каталоге
+                }
         },
       });
       return response.data.result;
