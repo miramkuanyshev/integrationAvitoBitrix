@@ -1,0 +1,13 @@
+# Исключить директорию node_modules
+node_modules/
+
+# Исключить файлы .env
+.env
+.env.*
+!.env.example
+
+# Дополнительные настройки для IDE и ОС
+.DS_Store
+.idea/
+.vscode/
+*.log
