@@ -206,9 +206,9 @@ async sendUpcomingLimitNotification(product, nextReductionNumber) {
   console.log(`Обработка товара ${product.NAME} (ID: ${product.ID})`);
 
   // Проверка разрешения на понижение
-  if (!product.PROPERTY_165 || product.PROPERTY_165 === 'false') {
-    return { processed: false, reason: 'Понижение цены не разрешено (PROPERTY_165)' };
-  }
+  if (product.PROPERTY_541 && product.PROPERTY_541.value === 173) {
+    return { processed: false, reason: 'Понижение цены не разрешено (PROPERTY_541)' };
+}
 
   // Проверка наличия актуальной оценки
   if (!product.PROPERTY_159 || product.PROPERTY_159 === 'false') {

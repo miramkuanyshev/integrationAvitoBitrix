@@ -385,6 +385,33 @@ const CATEGORY_SPECIFIC = {
       CompanyName: companyname
     }
   },
+  '119': {
+    fields: {
+      'PROPERTY_435': 'Make',
+      'PROPERTY_437': 'Model',
+      'PROPERTY_183': 'EngineHours',
+      'PROPERTY_453': 'TypeOfVehicle',
+      'PROPERTY_457': 'Power',
+      'PROPERTY_111': 'VIN',
+      'PROPERTY_485': 'PriceWithVAT',
+      'PROPERTY_469': 'Availability',
+      'PROPERTY_471': 'Condition',
+      'PROPERTY_473': 'TechnicalPassport',
+      'PROPERTY_165': 'AvitoId',      
+      'PROPERTY_499': 'EngineCapacity',
+      'PROPERTY_539': 'UnderCarriage',
+    },
+    requiredFields: [],
+    defaults: {
+
+      Category: 'Грузовики и спецтехника',
+      GoodsType: 'Сельхозтехника',
+      Currency: 'RUB',
+      ListingFee: ListingFee,
+      AvitoStatus: avitostatus,
+      CompanyName: companyname
+    }
+  },
 };
 
 // Объединяем общие и специфичные поля
