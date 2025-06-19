@@ -148,7 +148,6 @@ async function runPriceReduction() {
     `;
 
     console.log(result);
-    await telegramNotifier.sendNotification(report);
     
     return {
       success: true,
